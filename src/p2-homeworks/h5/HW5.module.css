@@ -1,0 +1,30 @@
+.links {
+    margin-bottom: 15px;
+}
+
+.link {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    /*display: none;*/
+}
+
+.alllink {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.alllink:hover {
+    background-color: #b0c4de;
+    box-shadow: 5px 3px 19px -4px #000000;
+}
+
+.link:hover {
+    background-color: #b0c4de;
+    box-shadow: 5px 3px 19px -4px #000000;
+}
