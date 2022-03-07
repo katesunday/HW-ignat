@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/EkaterinaKopylova/it-camasutra/ignatHW/my-hw-ignat/static/css/main.f0728593.css",
-    "main.js": "/EkaterinaKopylova/it-camasutra/ignatHW/my-hw-ignat/static/js/main.e54d7a4d.js",
-    "index.html": "/EkaterinaKopylova/it-camasutra/ignatHW/my-hw-ignat/index.html",
-    "main.f0728593.css.map": "/EkaterinaKopylova/it-camasutra/ignatHW/my-hw-ignat/static/css/main.f0728593.css.map",
-    "main.e54d7a4d.js.map": "/EkaterinaKopylova/it-camasutra/ignatHW/my-hw-ignat/static/js/main.e54d7a4d.js.map"
+    "main.css": "/HW-ignat/static/css/main.f0728593.css",
+    "main.js": "/HW-ignat/static/js/main.e54d7a4d.js",
+    "index.html": "/HW-ignat/index.html",
+    "main.f0728593.css.map": "/HW-ignat/static/css/main.f0728593.css.map",
+    "main.e54d7a4d.js.map": "/HW-ignat/static/js/main.e54d7a4d.js.map"
   },
   "entrypoints": [
     "static/css/main.f0728593.css",
