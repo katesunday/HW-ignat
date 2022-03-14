@@ -1,10 +1,10 @@
-import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from 'react'
+import React , {DetailedHTMLProps , InputHTMLAttributes , HTMLAttributes , useState} from 'react'
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText'
 
 // тип пропсов обычного инпута
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement> , HTMLInputElement>
 // тип пропсов обычного спана
-type DefaultSpanPropsType = DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>
+type DefaultSpanPropsType = DetailedHTMLProps<HTMLAttributes<HTMLSpanElement> , HTMLSpanElement>
 
 // здесь мы говорим что у нашего инпута будут такие же пропсы как у обычного инпута
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
@@ -19,16 +19,16 @@ type SuperEditableSpanType = DefaultInputPropsType & { // и + ещё пропс
 
 const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     {
-        autoFocus, // игнорировать изменение этого пропса
-        onBlur,
-        onEnter,
-        spanProps,
+        autoFocus , // игнорировать изменение этого пропса
+        onBlur ,
+        onEnter ,
+        spanProps ,
 
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
-    const [editMode, setEditMode] = useState<boolean>(false)
-    const {children, onDoubleClick, className, ...restSpanProps} = spanProps || {}
+    const [editMode , setEditMode] = useState<boolean>(false)
+    const {children , onDoubleClick , className , ...restSpanProps} = spanProps || {}
 
     const onEnterCallback = () => {
         // setEditMode() // выключить editMode при нажатии Enter
@@ -36,12 +36,12 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
         onEnter && onEnter()
     }
     const onBlurCallback = (e: React.FocusEvent<HTMLInputElement>) => {
-        // setEditMode() // выключить editMode при нажатии за пределами инпута
+        setEditMode(false) // выключить editMode при нажатии за пределами инпута
 
         onBlur && onBlur(e)
     }
-    const onDoubleClickCallBack = (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
-        // setEditMode() // включить editMode при двойном клике
+    const onDoubleClickCallBack = (e: React.MouseEvent<HTMLSpanElement , MouseEvent>) => {
+        setEditMode(true) // включить editMode при двойном клике
 
         onDoubleClick && onDoubleClick(e)
     }
