@@ -1,27 +1,31 @@
 .message {
-position: relative;
+    position: relative;
 }
-.ava{
+
+.ava {
     width: 50px;
     height: 50px;
     position: absolute;
     border-radius: 50%;
-    top:20px;
+    top: 20px;
     border: 1px solid black;
 }
-.divAva{
+
+.divAva {
 
 
 }
-.bgMessage{
+
+.bgMessage {
     position: relative;
     left: 70px;
     padding: 10px 20px 0 27px;
     background-color: grey;
-    width:auto;
-    height: auto;
+    width: 300px;
+    /*height: auto;*/
     border-radius: 25px;
 }
+
 .bgMessage::before {
     content: '';
     position: absolute;
@@ -32,15 +36,17 @@ position: relative;
 
 }
 
-.bgMessage h5{
+.bgMessage h5 {
     display: inline-block;;
     margin: 0;
     padding-bottom: 8px;
 }
-.bgMessage p{
+
+.bgMessage p {
     margin: 0;
 }
-.time{
+
+.time {
     position: relative;
     left: 80%;
     bottom: 20px;
