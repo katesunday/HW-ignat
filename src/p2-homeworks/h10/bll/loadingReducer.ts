@@ -1,14 +1,25 @@
+import exp from "constants";
+
 const initState = {
-
+    isLoading: false
 }
+export type initStateType = typeof initState
 
-export const loadingReducer = (state = initState, action: any): any => { // fix any
+export const loadingReducer = (state = initState , action: loadingACType): initStateType => { // fix any
     switch (action.type) {
-        case '': {
-            return state
+        case 'SET-LOADING': {
+            return {
+                ...state , isLoading: action.isLoading
+            }
         }
-        default: return state
+        default:
+            return state
     }
 }
-
-export const loadingAC = (): any => {} // fix any
+export type loadingACType = ReturnType<typeof loadingAC>
+export const loadingAC = (isLoading: boolean) => {
+    return {
+        type: 'SET-LOADING' ,
+        isLoading: isLoading
+    } as const
+} // fix any

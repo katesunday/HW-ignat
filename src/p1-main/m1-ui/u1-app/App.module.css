@@ -17,4 +17,8 @@
     display: flex;
 }
 
+.loader {
+    height: 60px;
+}
+
 
