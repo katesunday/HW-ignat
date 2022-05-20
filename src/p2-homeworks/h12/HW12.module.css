@@ -1,23 +1,43 @@
+.wholeDiv {
+    padding: 5px;
+}
+
 .dark {
     background: dimgrey;
+    padding: 5px;
+
 }
 
 .dark-text {
+    margin-right: 15px;
     color: aliceblue;
 }
 
 .red {
     background: lightcoral;
+    padding: 5px;
 }
 
 .red-text {
+    margin-right: 15px;
     color: aqua;
 }
 
 .some {
-    background: lightgreen;
+    background: lightsteelblue;
+    padding: 5px;
 }
 
 .some-text {
+    margin-right: 15px;
     color: darkslateblue;
+}
+
+.none {
+    padding: 5px;
+    background-color: white;
+}
+
+.none-text {
+    margin-right: 15px;
 }

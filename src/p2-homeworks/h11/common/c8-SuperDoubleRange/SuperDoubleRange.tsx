@@ -16,7 +16,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 ) => {
     // сделать самому, можно подключать библиотеки
     return (
-        <div style={{width: '200px'}}>
+        <div style={{width: '200px' , marginLeft: '20px'}}>
             <Slider onChange={(e , v) => {
                 onChangeRange && onChangeRange(v as number[])
                 onChangeBoth(v as number[])

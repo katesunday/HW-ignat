@@ -40,7 +40,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
 
     return (
         <>
-            <div style={{width: '200px'}}>
+            <div style={{width: '200px' , marginLeft: '20px'}}>
                 <Slider onChange={(e , v) => onChangeCallback(e , v)} defaultValue={50}
                         aria-label="Default"
                         valueLabelDisplay="auto" value={Number(restProps.value)}
