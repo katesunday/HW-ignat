@@ -6,6 +6,7 @@ import {useSelector} from "react-redux";
 import {AppStoreType} from "../../h10/bll/store";
 import {ThemeType} from "../../h12/bll/themeReducer";
 import s from "../../h12/HW12.module.css";
+import HW13 from "../../h13/HW13";
 
 function JuniorPlus() {
     const theme = useSelector<AppStoreType , ThemeType>(state => state.theme)
@@ -15,6 +16,7 @@ function JuniorPlus() {
             <HW12/>
             <HW10/>
             <HW11/>
+            <HW13/>
 
 
         </div>
